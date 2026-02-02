@@ -27,7 +27,9 @@ projects:
       - key: FUSIONAUTH_APP_RUNTIME_MODE
         value: development
       - key: DATABASE_USERNAME
-        sync: false
+        fromDatabase:
+          name: fusionauth_db
+          property: user
     databases:
     - name: fusionauth
       databaseName: fusionauth_db
