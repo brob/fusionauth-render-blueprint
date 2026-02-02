@@ -12,8 +12,7 @@ databases:
 services:
 - type: web
   name: fusionauth-app:latest
-  runtime: docker
-  dockerCommand: docker compose up -d
+  runtime: image
   image:
     url: fusionauth/fusionauth-app:latest
   plan: free
