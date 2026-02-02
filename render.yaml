@@ -14,7 +14,7 @@ services:
   name: fusionauth-app:latest
   runtime: image
   image:
-    url: docker.io/fusionauth/fusionauth-app:latest
+    url: fusionauth/fusionauth-app:latest
   plan: free
   envVars:
   - key: DATABASE_URL
