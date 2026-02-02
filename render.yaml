@@ -1,5 +1,13 @@
 # Exported from Render on 2026-02-02T13:59:43Z
 version: "1"
+databases:
+- name: fusionauth
+  databaseName: fusionauth_db
+  plan: free
+  ipAllowList:
+  - source: 0.0.0.0/0
+    description: everywhere
+  postgresMajorVersion: "18"
 
 services:
 - type: web
@@ -27,11 +35,3 @@ services:
     fromDatabase:
       name: fusionauth_db
       property: user
-databases:
-- name: fusionauth
-  databaseName: fusionauth_db
-  plan: free
-  ipAllowList:
-  - source: 0.0.0.0/0
-    description: everywhere
-  postgresMajorVersion: "18"
