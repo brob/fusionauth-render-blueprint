@@ -2,7 +2,7 @@
 version: "1"
 databases:
 - name: fusionauth
-  databaseName: fusionauth_db
+  databaseName: fusionauth_db_postgres
   plan: free
   ipAllowList:
   - source: 0.0.0.0/0
@@ -18,12 +18,20 @@ services:
   plan: free
   envVars:
   - key: DATABASE_URL
-    sync: false
+    fromDatabase:
+      name: fusionauth_db_postgres
+      property: connectionString
   - key: POSTGRES_PASSWORD
-    sync: false
+    fromDatabase:
+      name: fusionauth_db_postgres
+      property: password
   - key: POSTGRES_USER
-    sync: false
+    fromDatabase:
+      name: fusionauth_db_postgres
+      property: user
   - key: FUSIONAUTH_APP_RUNTIME_MODE
     value: development
   - key: DATABASE_USERNAME
-    sync: false
+    fromDatabase:
+      name: fusionauth_db_postgres
+      property: user
