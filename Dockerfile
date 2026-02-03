@@ -1,6 +1,10 @@
 FROM fusionauth/fusionauth-app:latest
 ARG DATABASE_HOST
 ARG DATABASE_NAME
+ARG POSTGRES_PASSWORD
+ARG POSTGRES_USER
+ARG FUSIONAUTH_APP_RUNTIME_MODE
+ARG DATABASE_USERNAME
 LABEL description="Create an image running FusionAuth App. Installs FusionAuth App"
 LABEL maintainer="FusionAuth <dev@fusionauth.io>"
 EXPOSE 9011
