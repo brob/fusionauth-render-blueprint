@@ -14,7 +14,7 @@ services:
   name: fusionauth-app:latest
   runtime: image
   image:
-    url: hello-world
+    url: httpd:trixie
   plan: free
   envVars:
   - key: DATABASE_URL
