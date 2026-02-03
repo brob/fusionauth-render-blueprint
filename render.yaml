@@ -34,3 +34,7 @@ services:
     fromDatabase:
       name: fusionauth
       property: user
+  - key: DATABASE_NAME
+    fromDatabase:
+      name: fusionauth
+      property: database
