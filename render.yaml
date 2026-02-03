@@ -13,8 +13,7 @@ services:
 - type: web
   name: fusionauth-app:latest
   runtime: docker
-  image:
-    url: httpd:trixie
+
   plan: free
   envVars:
   - key: DATABASE_URL
