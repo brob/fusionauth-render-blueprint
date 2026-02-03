@@ -14,7 +14,7 @@ services:
   name: fusionauth-app:latest
   runtime: image
   image:
-    url: fusionauth/fusionauth-app:latest
+    url: hello-world
   plan: free
   envVars:
   - key: DATABASE_URL
