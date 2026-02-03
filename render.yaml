@@ -20,6 +20,10 @@ services:
     fromDatabase:
       name: fusionauth
       property: connectionString
+  - key: DATABASE_HOST
+    fromDatabase:
+      name: fusionauth
+      property: host
   - key: POSTGRES_PASSWORD
     fromDatabase:
       name: fusionauth
