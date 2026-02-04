@@ -11,5 +11,4 @@ _Please fork this repository. Changes to this repository can automatically updat
 3. Add a new blueprint with the link to your GitHub repository (remember, you forked it)
 4. Once the blueprint installs, navigate to the URL Render gives you for your FusionAuth web app
 5. You'll start in "Maintenance mode" to finish your DB hookup. The fields should all be populated. 
-6. You'll need to get your Database_password from your Database connection variables
-7. Run the setup wizard as usual
+6. Run the setup wizard as usual
