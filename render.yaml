@@ -29,7 +29,7 @@ services:
       name: fusionauth
       property: user
   - key: FUSIONAUTH_APP_RUNTIME_MODE
-    value: development
+    value: production
   - key: DATABASE_USERNAME
     fromDatabase:
       name: fusionauth
